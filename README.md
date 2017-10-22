@@ -18,8 +18,12 @@ After installing mysql with
 start mysql with 
 ```/usr/local/bin/mysql.server start```
 
-```CREATE DATABASE urls``` 
+```CREATE DATABASE urls;``` 
 ```CREATE TABLE links(short_url varchar(255) NOT NULL PRIMARY KEY,full_url VARCHAR(255));```
 
 Add click count column: 
-```ALTER TABLE link ADD click_count int```
+```ALTER TABLE links ADD click_count int;```
+
+## Docker 
+
+In progress ....

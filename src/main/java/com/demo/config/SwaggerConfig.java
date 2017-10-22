@@ -3,6 +3,8 @@ package com.demo.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
@@ -19,7 +21,23 @@ public class SwaggerConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.demo.controller"))
                 //.paths(regex("/rest.*"))
-                .build();
+                .build()
+                .apiInfo(metaInfo());
+    }
+
+    private ApiInfo metaInfo() {
+
+        ApiInfo apiInfo = new ApiInfo(
+                "Spring Boot Bitly-Swager API",
+                "Spring Boot Bitly-Swager API for GHub",
+                "1.0",
+                "Terms of Service",
+                new Contact("Varma", "https://github.com/dvsgvarma", "dvsgvarma@gmail.com"),
+                "Apache License Version 2.0",
+                "https://www.apache.org/licesen.html"
+        );
+
+        return apiInfo;
     }
 
 }
