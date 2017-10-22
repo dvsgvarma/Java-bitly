@@ -1,4 +1,7 @@
 # Java-bitly
+
+This project is like bitly but we is DB for url-mappings and req count
+
 Java Spring Boot, Mokito, RabbitMQ, Swagger, Docker and all in one short and sweet project
 
 ### Local RabbitMQ setup
@@ -25,5 +28,11 @@ Add click count column:
 ```ALTER TABLE links ADD click_count int;```
 
 ## Docker 
-
 In progress ....
+## FlyWay
+In progress ....
+## Lombok
+In progress ....
+
+## SPL - ASCCI
+Varma
