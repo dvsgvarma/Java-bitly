@@ -2,6 +2,7 @@ package com.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModelProperty;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -10,10 +11,12 @@ import javax.persistence.Id;
 public class Link {
 
     @JsonProperty("short_url")
+    @ApiModelProperty(notes = "shorten version of the url")
     @Id
     private String shortUrl;
 
     @JsonProperty("full_url")
+    @ApiModelProperty(notes = "Full version of the url")
     private String fullUrl;
 
     @JsonIgnore
