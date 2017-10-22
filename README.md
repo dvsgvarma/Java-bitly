@@ -1,6 +1,6 @@
 # Java-bitly
 
-This project is like bitly but we is DB for url-mappings and req count
+link management platform like bitly - [Using db for now]
 
 Java Spring Boot, Mokito, RabbitMQ, Swagger, Docker and all in one short and sweet project
 
@@ -29,10 +29,12 @@ Add click count column:
 
 ## Docker 
 In progress ....
+
 ## FlyWay
 In progress ....
+
 ## Lombok
-In progress ....
+In progress .... 
 
 ## SPL - ASCCI
 Varma
